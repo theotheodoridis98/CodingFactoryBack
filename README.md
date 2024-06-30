@@ -14,8 +14,6 @@ EndoServer is a Java Spring Boot application that serves as a server for managin
   - [Production Profile](#production-profile)
 - [Configurations](#configurations)
   - [External Configuration Files](#external-configuration-files)
-  - [Docker](#docker)
-  - [Kubernetes](#kubernetes)
 - [Usage](#usage)
 - [API Documentation](#api-documentation)
 - [Contributing](#contributing)
@@ -35,7 +33,5 @@ EndoServer is a Java Spring Boot application that serves as a server for managin
 - **Spring Boot:** Provides a framework for building Java applications quickly and easily.
 - **Spring Security:** Handles authentication and authorization.
 - **MySQL:** Used as the database to store instrument and user data.
-- **Docker:** Enables containerization and deployment.
-- **Kubernetes:** Orchestrates and manages containerized applications.
 - **Maven:** Manages project dependencies and builds.
 - **SMTP:** Used for email functionality.
