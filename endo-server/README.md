@@ -14,8 +14,7 @@ EndoServer is a Java Spring Boot application that serves as a server for managin
   - [Production Profile](#production-profile)
 - [Configurations](#configurations)
   - [External Configuration Files](#external-configuration-files)
-  - [Docker](#docker)
-  - [Kubernetes](#kubernetes)
+
 - [Usage](#usage)
 - [API Documentation](#api-documentation)
 - [Contributing](#contributing)
@@ -35,8 +34,6 @@ EndoServer is a Java Spring Boot application that serves as a server for managin
 - **Spring Boot:** Provides a framework for building Java applications quickly and easily.
 - **Spring Security:** Handles authentication and authorization.
 - **MySQL:** Used as the database to store instrument and user data.
-- **Docker:** Enables containerization and deployment.
-- **Kubernetes:** Orchestrates and manages containerized applications.
 - **Maven:** Manages project dependencies and builds.
 - **SMTP:** Used for email functionality.
 
@@ -47,8 +44,6 @@ Before you begin, ensure you have met the following requirements:
 - Java Development Kit (JDK) installed.
 - Maven build tool installed.
 - MySQL database server installed.
-- Docker (optional, for containerization).
-- Kubernetes (optional, for orchestration).
 
 ## Getting Started
 
@@ -114,28 +109,6 @@ spring.mail.host=smtp.example.com
 spring.mail.port=587
 spring.mail.username=email@example.com
 spring.mail.password=emailpassword
-```
-Docker
-To run the application in a Docker container, follow these steps:
-
-Build the Docker image.
-
-```sh
-docker build -t endo-server .
-```
-Run the Docker container.
-
-```sh
-docker run -p 8080:8080 endo-server
-```
-Kubernetes
-You can deploy the application to Kubernetes using Kubernetes manifests or Helm charts. Ensure you have a Kubernetes cluster set up.
-
-Create Kubernetes resources using manifests or Helm charts.
-```sh
-# Using manifests
-kubectl apply -f deployment.yaml
-kubectl apply -f service.yaml
 ```
 ```sh
 # OR using Helm
